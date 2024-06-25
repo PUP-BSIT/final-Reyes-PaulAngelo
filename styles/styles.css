@@ -1,0 +1,23 @@
+div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: slategrey;
+    border: 2px black;
+    color: white;
+}
+
+body{
+    background-color: skyblue;
+}
+
+h2 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    border-left: 3px solid #333;
+    padding-left: 10px;
+}
