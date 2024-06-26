@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #18244c;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "introduction"
+        "footer";
+    gap: 20px;
+    padding: 20px;
+}
+
+header {
+    grid-area: header;
+    background-color: #1e559e;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.name h2 {
+    margin: 0;
+}
+
+.introduction {
+    grid-area: introduction;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #000000;
+}
+
+#reasons p {
+    text-align: left;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #1e559e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}

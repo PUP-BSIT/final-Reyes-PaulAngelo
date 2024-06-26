@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #18244c;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "introduction"
+        "grids"
+        "comments"
+        "footer";
+    gap: 20px;
+    padding: 20px;
+}
+
+header {
+    grid-area: header;
+    background-color: #1e559e;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.name h2 {
+    margin: 0;
+}
+
+.introduction {
+    grid-area: introduction;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.intro-content {
+    max-width: 60%;
+}
+
+.intro-image img {
+    width: 150px;
+    height: 200px;
+    border-radius: 50% / 30%;
+}
+
+.grids {
+    grid-area: grids;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #18244c;
+}
+
+.grid-items {
+    padding: 20px;
+    border: 1px solid #1e559e;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#tcomment {
+    grid-area: comments;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#comments {
+    grid-area: comments;
+    padding: 20px;
+    background-color: #18244c;
+    text-align: center;
+}
+
+#comment_form > h2 {
+    background-color: #ffffff;
+}
+
+#comment_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+}
+
+#form input, #form textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #1e559e;
+    border-radius: 4px;
+}
+
+#form button {
+    padding: 10px 20px;
+    background-color: #1e559e;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #1e559e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #1e559e;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
