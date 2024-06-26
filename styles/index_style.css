@@ -55,18 +55,11 @@ header {
     background-color: #18244c;
 }
 
-.grid-items {
+.grid-item {
     padding: 20px;
     border: 1px solid #1e559e;
     border-radius: 10px;
     background-color: #ffffff;
-}
-
-#tcomment {
-    grid-area: comments;
-    padding: 20px;
-    background-color: #ffffff;
-    text-align: center;
 }
 
 #comments {
@@ -126,4 +119,59 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+@media (max-width: 320px) {
+    body {
+        grid-template-areas:
+            "header"
+            "introduction"
+            "grids"
+            "comments"
+            "footer";
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    body {
+        grid-template-areas:
+            "header"
+            "introduction"
+            "grids"
+            "comments"
+            "footer";
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    body {
+        grid-template-areas:
+            "header"
+            "introduction"
+            "grids"
+            "comments"
+            "footer";
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "header"
+            "introduction"
+            "grids"
+            "comments"
+            "footer";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        grid-template-areas:
+            "header"
+            "introduction"
+            "grids"
+            "comments"
+            "footer";
+    }
 }
